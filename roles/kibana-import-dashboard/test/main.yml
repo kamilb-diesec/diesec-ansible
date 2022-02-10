@@ -1,0 +1,8 @@
+---
+
+- hosts : server
+  roles:
+    - role: ansible-role-kibana-import-dashboard-and-visualization
+      kibana_dashboard_path: kibana/dashboard.json
+      kibana_visualization_path: kibana/visualization.json
+      kibana_search_path: kibana/search.json

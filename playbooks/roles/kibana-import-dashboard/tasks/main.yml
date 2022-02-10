@@ -1,0 +1,17 @@
+---
+- name: Create a new index
+  include: create_index.yml
+  when: kibana_created_index_enabled
+
+- name: Import kibana dashboards
+  include: import_dashboards.yml
+  when: kibana_import_dashboard_enabled
+
+- name: Import kibana visualisations
+  include: import_visualizations.yml
+  when: kibana_import_visualization_enabled
+
+- name: Import kibana searches
+  include: import_searches.yml
+  when: kibana_import_search_enabled
+...

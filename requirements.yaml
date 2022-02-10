@@ -1,0 +1,5 @@
+- src: geerlingguy.filebeat
+
+- name: kibana-import-dashboard
+  src: https://github.com/papebadiane/ansible-role-kibana-import-dashboard-and-visualization.git
+  version: origin/master

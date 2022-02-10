@@ -1,0 +1,10 @@
+---
+- name: main playbook
+  hosts: all
+  remote_user: ansible_user
+  become: no
+  gather_facts: no
+  tasks:
+    - name: Run simple ansible ping to check connection to remote host
+      ansible.builtin.ping:
+
