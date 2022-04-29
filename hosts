@@ -47,5 +47,5 @@ aws-ec2-server   ansible_ssh_host=254.204.117.71
 # Here's another example of host ranges, this time there are no
 # leading 0s:
 
-#db-[99:101]-node.example.comdemo
+#db-[99:101]-node.example.comdemodemo
 
